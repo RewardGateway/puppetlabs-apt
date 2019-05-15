@@ -7,5 +7,5 @@ deb <%- if @architecture or @_allow_unsigned -%>
 <%- if @_include['src'] then -%>
 deb-src <%- if @architecture or @_allow_unsigned -%>
 [<%- if @architecture %>arch=<%= @architecture %> <% end %><% if @_allow_unsigned %>trusted=yes<% end -%>
-] <%- end %><%= @location %> <%= @_release %> <%= @repos %>
+] <%- end %><%= @location %> <%= @repos %>
 <%- end -%>

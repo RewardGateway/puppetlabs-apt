@@ -5,7 +5,7 @@ define apt::source(
   $comment           = $name,
   $ensure            = present,
   $release           = undef,
-  $repos             = 'main',
+  $repos             = 'puppet',
   $include           = {},
   $key               = undef,
   $pin               = undef,
